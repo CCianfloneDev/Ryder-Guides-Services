@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #f5f5f5;*/
+    margin: 0;
+    padding: 0;
+}
+.navbar.navbar-expand-lg {
+    padding: 20px 0; /* This will make the navbar thicker when it's fully expanded */
+}
+
+.navbar {
+    background-color: #005580 !important; /* This is the same color as the header */
+    color: white !important; /* This will make the text color white */
+    padding: 10px 0; /* This will make the navbar thicker when it's not expanded */
+}
+
+.navbar a {
+    color: whitesmoke !important;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1.2em; /* This will increase the font size of the text */
+    font-weight: bold; /* This will make the text bold */
+}
+
+.navbar a:hover {
+    color: white; /* This will make the text color white */
+}
+
+.navbar-brand {
+    font-size: 2em !important; /* This will increase the font size of the text */
+}
+
+
+header {
+    background-color: #005580;
+    padding: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #005580;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Transform the text to uppercase */
+    text-decoration: underline; /* Add an underline to the text */
+}
+
+ul {
+    list-style-type: none; /* This will remove the bullet point symbols */
+    text-align: center; /* This will center the list horizontally */
+}
+
