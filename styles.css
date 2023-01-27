@@ -3,14 +3,16 @@ body {
     /*background-color: #f5f5f5;*/
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .navbar.navbar-expand-lg {
     padding: 20px 0; /* This will make the navbar thicker when it's fully expanded */
 }
 
 .navbar {
-    background-color: #005580 !important; /* This is the same color as the header */
-    color: white !important; /* This will make the text color white */
+    background: rgb(0,34,135);
+    background: linear-gradient(90deg, rgba(0,34,135,1) 7%, rgba(0,9,68,1) 76%);
+   /* color: white !important;  This will make the text color white */
     padding: 10px 0; /* This will make the navbar thicker when it's not expanded */
 }
 
@@ -21,6 +23,7 @@ body {
     margin-right: 10px;
     font-size: 1.2em; /* This will increase the font size of the text */
     font-weight: bold; /* This will make the text bold */
+    padding: 0 1rem !important;
 }
 
 .navbar a:hover {
@@ -28,11 +31,21 @@ body {
 }
 
 .navbar-brand {
-    font-size: 2em !important; /* This will increase the font size of the text */
+    font-size: 2.2em !important; /* This will increase the font size of the text */
+    position: relative;
+    top: -5px;
 }
 
+@media (max-width: 600px) {
+    .navbar .nav-item {
+      padding: 10px;
+    }
+  }
+  
 
 header {
+    background: rgb(0,34,135);
+    background: linear-gradient(90deg, rgba(0,34,135,1) 7%, rgba(0,9,68,1) 76%);
     background-color: #005580;
     padding: 10px;
 }
@@ -47,26 +60,42 @@ header a:hover {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1500px;
     padding: 20px;
     text-align: center;
+    width: 90%; /* increase this value to make the sections wider */
+    margin: 0 auto; /* center the container on the page */
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
 }
 
 footer {
-    background-color: #005580;
+    background: rgb(0,34,135);
+    background: linear-gradient(90deg, rgba(0,34,135,1) 7%, rgba(0,9,68,1) 76%);
     color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
+    align-items: flex-end;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    background-color: #333;
+    color: #fff;
 }
 
-li {
+footer p {
+    padding-right: 20px;
+}
+
+.navbar li {
     font-weight: bold; /* Make the text bold */
-    text-transform: uppercase; /* Transform the text to uppercase */
-    text-decoration: underline; /* Add an underline to the text */
+    padding: 0 10px; /* adjust as needed */
+    margin: 0 5px; /* adjust as needed */
 }
 
 ul {
@@ -74,3 +103,17 @@ ul {
     text-align: center; /* This will center the list horizontally */
 }
 
+.services li {
+    text-indent:  -20px;
+}
+
+h1{
+    font-size: 3rem; /* increase the font size */
+    text-transform: uppercase; /* make it uppercase */
+    font-weight: bold; /* make it bold */
+
+}
+
+  
+
+  
