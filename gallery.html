@@ -1,205 +1,66 @@
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif
-}
-
-.navbar.navbar-expand-lg {
-	padding: 30px 0
-}
-
-.navbar {
-	background: #002287;
-	background: linear-gradient(90deg, rgba(0, 34, 135, 1) 7%, rgba(0, 9, 68, 1) 76%)
-}
-
-.navbar a {
-	color: #f5f5f5 !important;
-	padding: 10px;
-	margin-right: 10px;
-	font-size: 1.2em;
-	font-weight: 700;
-	padding: 0 1rem !important
-}
-
-.navbar a:hover {
-	color: #fff
-}
-
-.navbar-brand {
-	font-size: 2.2em !important;
-	position: relative;
-	top: -5px
-}
-
-.navbar-toggler {
-	background-color: #fff
-}
-
-@media (max-width:600px) {
-	.navbar .nav-item {
-		padding: 10px
-	}
-
-	.navbar-brand {
-		font-size: 1.3em !important
-	}
-
-	.navbar {
-		padding: 10px
-	}
-
-	.navbar-toggler {
-		margin-right: 1rem
-	}
-
-	#welcome-text {
-		font-size: 1.3em
-	}
-
-	.footer-left p {
-		font-size: .8em;
-        z-index: 1;
-	}
-
-	.social-icons a {
-		font-size: .9em !important
-	}
-}
-
-
-header {
-	background: #002287;
-	background: linear-gradient(90deg, rgba(0, 34, 135, 1) 7%, rgba(0, 9, 68, 1) 76%);
-	background-color: #005580
-}
-
-header a {
-	color: #fff;
-	text-decoration: none
-}
-
-header a:hover {
-	color: #ccc
-}
-
-.container {
-	max-width: 1500px;
-	padding: 20px;
-	text-align: center;
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	min-height: 100vh;
-	padding-bottom: 10rem
-}
-
-.main-content {
-	flex: 1
-}
-
-footer {
-	background: #002287;
-	background: linear-gradient(90deg, rgba(0, 34, 135, 1) 7%, rgba(0, 9, 68, 1) 76%);
-	align-items: flex-end;
-	bottom: 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	height: 8rem;
-}
-
-.footer-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #002287;
-	background: linear-gradient(90deg, rgba(0, 34, 135, 1) 7%, rgba(0, 9, 68, 1) 76%);
-	color: #fff;
-	bottom: 0;
-	width: 100%;
-	height: 15rem
-}
-
-.footer-left {
-	padding-left: 20px;
-	padding-top: 10px
-}
-
-.footer-left p {
-	padding-top: 10px
-}
-
-/*
-.footer-logo {
-    background-image: url(images/brand/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 12rem;
-    height: 12rem;
-    margin: 0 auto;
-    display: block;
-} */
-
-
-.social-icons {
-	display: flex;
-	align-items: center;
-	padding-right: 20px;
-	padding-bottom: 8rem
-}
-
-.social-icons a {
-	margin-left: 10px;
-	color: #fff;
-	padding-left: 20px;
-	font-size: 2em
-}
-
-.navbar li {
-	font-weight: 700;
-	padding: 0 10px;
-	margin: 0 5px
-}
-
-ul {
-	list-style-type: none;
-	text-align: center
-}
-
-.services li {
-	text-indent: -20px
-}
-
-h1 {
-	font-size: 3rem;
-	text-transform: uppercase;
-	font-weight: 700
-}
-
-.grid {
-	padding: 20px 20px 20px 20px;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	grid-gap: 40px;
-    padding-bottom: 10rem;
-}
-
-.grid-item {
-	width: 100%;
-	height: auto
-}
-
-@media screen and (max-width:600px) {
-	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
-	}
-}
-
-@media (max-width:600px) {
-	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
-	}
-}
+<!DOCTYPE html>
+<html>
+  <head>      
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Ryder Guides & Services </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Ryder Guides & Services</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+        <div id="gallery" class="grid">
+        </div>
+        <script src="Javascript/gallery.js"></script>
+        <footer>
+          <div class="footer-container">
+              <div class="footer-left">
+                  <p>Copyright &#169;2022 Ryder Guides & Services</p>
+                  <p>Address: 123 Main St, Anytown USA</p>
+                  <p>Phone: 555-555-5555</p>
+                  <p>Email: info@ryderguides.com</p>
+              </div>
+              <div class="social-icons">
+                <a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+      </footer>
+  </body>
+</html>
