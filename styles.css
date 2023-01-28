@@ -6,20 +6,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 .navbar.navbar-expand-lg {
-    padding: 20px 0; /* This will make the navbar thicker when it's fully expanded */
+    padding: 30px 0; /* This will make the navbar thicker when it's fully expanded */
 }
 
 .navbar {
     background: rgb(0,34,135);
     background: linear-gradient(90deg, rgba(0,34,135,1) 7%, rgba(0,9,68,1) 76%);
-   /* color: white !important;  This will make the text color white */
-    padding: 10px 0; /* This will make the navbar thicker when it's not expanded */
 }
 
 .navbar a {
     color: whitesmoke !important;
     padding: 10px;
-    border-radius: 5px;
     margin-right: 10px;
     font-size: 1.2em; /* This will increase the font size of the text */
     font-weight: bold; /* This will make the text bold */
@@ -36,10 +33,27 @@ body {
     top: -5px;
 }
 
+.navbar-toggler {
+    background-color: white; /* Change the color of the toggle button to white */
+}
+
 @media (max-width: 600px) {
     .navbar .nav-item {
       padding: 10px;
     }
+    .navbar-brand {
+        font-size: 1.3em !important; /* This will increase the font size of the text */
+    }
+    .navbar {
+        padding: 10px;
+    }
+    .navbar-toggler {
+        margin-right: 1rem; /* or padding-right, depending on what you prefer */
+    }
+    #welcome-text {
+        font-size: 1.3em;
+    }
+    
   }
   
 
@@ -47,7 +61,6 @@ header {
     background: rgb(0,34,135);
     background: linear-gradient(90deg, rgba(0,34,135,1) 7%, rgba(0,9,68,1) 76%);
     background-color: #005580;
-    padding: 10px;
 }
 
 header a {
