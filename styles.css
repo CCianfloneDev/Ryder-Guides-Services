@@ -1,198 +1,205 @@
 body {
-    font-family: Arial, sans-serif;
-    /*background-color: #f5f5f5;*/
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif
 }
+
 .navbar.navbar-expand-lg {
-    padding: 30px 0; /* This will make the navbar thicker when it's fully expanded */
+	padding: 30px 0
 }
 
 .navbar {
-    background: rgb(0,34,135);
-    background: linear-gradient(90deg, rgba(0,34,135,1) 7%, rgba(0,9,68,1) 76%);
+	background: #002287;
+	background: linear-gradient(90deg, rgba(0, 34, 135, 1) 7%, rgba(0, 9, 68, 1) 76%)
 }
 
 .navbar a {
-    color: whitesmoke !important;
-    padding: 10px;
-    margin-right: 10px;
-    font-size: 1.2em; /* This will increase the font size of the text */
-    font-weight: bold; /* This will make the text bold */
-    padding: 0 1rem !important;
+	color: #f5f5f5 !important;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 1.2em;
+	font-weight: 700;
+	padding: 0 1rem !important
 }
 
 .navbar a:hover {
-    color: white; /* This will make the text color white */
+	color: #fff
 }
 
 .navbar-brand {
-    font-size: 2.2em !important; /* This will increase the font size of the text */
-    position: relative;
-    top: -5px;
+	font-size: 2.2em !important;
+	position: relative;
+	top: -5px
 }
 
 .navbar-toggler {
-    background-color: white; /* Change the color of the toggle button to white */
+	background-color: #fff
 }
 
-@media (max-width: 600px) {
-    .navbar .nav-item {
-      padding: 10px;
-    }
-    .navbar-brand {
-        font-size: 1.3em !important; /* This will increase the font size of the text */
-    }
-    .navbar {
-        padding: 10px;
-    }
-    .navbar-toggler {
-        margin-right: 1rem; /* or padding-right, depending on what you prefer */
-    }
-    #welcome-text {
-        font-size: 1.3em;
-    }
-    
-  }
-  
+@media (max-width:600px) {
+	.navbar .nav-item {
+		padding: 10px
+	}
+
+	.navbar-brand {
+		font-size: 1.3em !important
+	}
+
+	.navbar {
+		padding: 10px
+	}
+
+	.navbar-toggler {
+		margin-right: 1rem
+	}
+
+	#welcome-text {
+		font-size: 1.3em
+	}
+
+	.footer-left p {
+		font-size: .8em;
+        z-index: 1;
+	}
+
+	.social-icons a {
+		font-size: .9em !important
+	}
+}
+
 
 header {
-    background: rgb(0,34,135);
-    background: linear-gradient(90deg, rgba(0,34,135,1) 7%, rgba(0,9,68,1) 76%);
-    background-color: #005580;
+	background: #002287;
+	background: linear-gradient(90deg, rgba(0, 34, 135, 1) 7%, rgba(0, 9, 68, 1) 76%);
+	background-color: #005580
 }
 
 header a {
-    color: white;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none
 }
 
 header a:hover {
-    color: #ccc;
+	color: #ccc
 }
 
 .container {
-    max-width: 1500px;
-    padding: 20px;
-    text-align: center;
-    width: 90%; /* increase this value to make the sections wider */
-    margin: 0 auto; /* center the container on the page */
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
+	max-width: 1500px;
+	padding: 20px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	padding-bottom: 10rem
 }
 
 .main-content {
-    flex: 1;
+	flex: 1
 }
 
 footer {
-    background: rgb(0,34,135);
-    background: linear-gradient(90deg, rgba(0,34,135,1) 7%, rgba(0,9,68,1) 76%);
-    color: white;
-    align-items: flex-end;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 5rem;
-    background-color: #333;
-    color: #fff;
+	background: #002287;
+	background: linear-gradient(90deg, rgba(0, 34, 135, 1) 7%, rgba(0, 9, 68, 1) 76%);
+	align-items: flex-end;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 8rem;
 }
 
-footer p {
-    padding-right: 20px;
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #002287;
+	background: linear-gradient(90deg, rgba(0, 34, 135, 1) 7%, rgba(0, 9, 68, 1) 76%);
+	color: #fff;
+	bottom: 0;
+	width: 100%;
+	height: 15rem
+}
+
+.footer-left {
+	padding-left: 20px;
+	padding-top: 10px
+}
+
+.footer-left p {
+	padding-top: 10px
+}
+
+/*
+.footer-logo {
+    background-image: url(images/brand/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    display: block;
+} */
+
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	padding-right: 20px;
+	padding-bottom: 8rem
+}
+
+.social-icons a {
+	margin-left: 10px;
+	color: #fff;
+	padding-left: 20px;
+	font-size: 2em
 }
 
 .navbar li {
-    font-weight: bold; /* Make the text bold */
-    padding: 0 10px; /* adjust as needed */
-    margin: 0 5px; /* adjust as needed */
+	font-weight: 700;
+	padding: 0 10px;
+	margin: 0 5px
 }
 
 ul {
-    list-style-type: none; /* This will remove the bullet point symbols */
-    text-align: center; /* This will center the list horizontally */
+	list-style-type: none;
+	text-align: center
 }
 
 .services li {
-    text-indent:  -20px;
+	text-indent: -20px
 }
 
-h1{
-    font-size: 3rem; /* increase the font size */
-    text-transform: uppercase; /* make it uppercase */
-    font-weight: bold; /* make it bold */
-
-}
-  
-.lightbox {
-    position: absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-    align-items: center;
-    justify-content: center;
+h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: 700
 }
 
-.lightbox.open {
-    display: flex;
-}
-
-.lightbox-content {
-    max-width: 80%;
-    max-height: 80%;
-    overflow: auto;
-    background: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-
-}
-
-.lightbox-content img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.lightbox-close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 32px;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Set up the grid container */
 .grid {
-    padding: 20px 20px 20px 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 40px;
+	padding: 20px 20px 20px 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-gap: 40px;
+    padding-bottom: 10rem;
 }
 
-/* Style the grid items (the images) */
 .grid-item {
-  width: 100%;
-  height: auto;
-}
-@media screen and (max-width: 600px) {
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
+	width: 100%;
+	height: auto
 }
 
-/* Media Queries */
-@media (max-width: 600px) {
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
+@media screen and (max-width:600px) {
+	.grid {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+	}
+}
+
+@media (max-width:600px) {
+	.grid {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+	}
 }
