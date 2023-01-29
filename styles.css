@@ -258,3 +258,46 @@ h3 {
 html {
 	scroll-behavior: smooth;
 }
+
+#contact-form {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact-form .form-control {
+    border-radius: 10px;
+    border: none;
+    background-color: #ebebeb;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#contact-form .btn-primary {
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#contact-form .btn-primary:hover {
+    background-color: #286090;
+    cursor: pointer;
+}
+
+#contact-form {
+	margin-bottom: 100px;
+}
