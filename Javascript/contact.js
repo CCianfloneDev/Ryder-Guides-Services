@@ -40,10 +40,10 @@ function validateForm(event) {
     removeError("phone");
   }
 
-  if (inquiry === "") {
+  if (inquiry === "" || inquiry.trim() === "") {
     displayError("inquiry", "Inquiry is required");
-    valid = false;
-  } else {
+    return false;
+  }else{
     removeError("inquiry");
   }
 
