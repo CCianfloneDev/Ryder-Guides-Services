@@ -301,3 +301,54 @@ html {
 #contact-form {
 	margin-bottom: 100px;
 }
+
+.carousel-slide {
+	display: none;
+	text-align: center;
+  }
+  
+  .slide-image {
+	max-width: 100%;
+	width: 40%;
+	height: auto;
+  }
+  
+  /* For screens smaller than 600px (e.g. mobile devices) */
+  @media (max-width: 600px) {
+	.carousel-slide img {
+	  width: 100%;
+	  height: auto;
+	  max-height: 400px;
+	}
+  
+	.carousel-indicator {
+	  width: 8px !important;
+	  height: 15px !important;
+	  border-radius: 50%;
+	  margin: 0px !important;
+	  margin-bottom: 10px;
+	  background-color: #bbb;
+	  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	}
+  
+	.carousel-indicator.active {
+	  background-color: #fff;
+	  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 0 4px rgba(255, 255, 255, 0.5);
+	}
+  }
+  
+
+  .carousel-indicator {
+	width: 10px;
+	height: 15px;
+	border-radius: 50%;
+	margin: 0 5px;
+	margin-bottom: 10px;
+	background-color: #bbb;
+  }
+  
+  .carousel-indicator.active {
+	background-color: #fff;
+	border-color: white;
+  }
+  
